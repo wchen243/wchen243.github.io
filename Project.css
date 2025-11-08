@@ -1,0 +1,69 @@
+:root {
+    --color-black: #000000;
+    --color-dark-gray: #5A5654;
+    --color-medium-gray: #A6A29F;
+    --color-burgundy: #63191B;
+    --color-white: #FFFFFF;
+    --background-color: var(--color-black);
+    --text-color: var(--color-white);
+    --primary-color: var(--color-burgundy);
+    --secondary-color: var(--color-dark-gray);
+    --accent-color: var(--color-medium-gray);
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+header {
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-white);
+}
+nav {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    gap: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+nav a {
+    color: var(--color-burgundy);
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    gap: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+main {
+    background: #000000;
+    padding: 1px 20px 20px 30px;
+    overflow: auto;
+}
+h2 {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+footer {
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FFFFFF;
+    color:#000000;
+}
