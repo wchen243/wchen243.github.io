@@ -131,8 +131,18 @@ nav a:hover {
 .img-list img:hover {
     transform: scale(1.05);
 }
+.main-title {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1.2em;
+    font-family:'Times New Roman', Times, serif
+}
 .gallery {
     display: none;
+    position: fixed;
+    align-items: center;
+    flex-direction: row;
     margin-top: 30px;
 }
 .gallery img {
