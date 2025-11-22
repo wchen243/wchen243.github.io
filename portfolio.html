@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design By Wing C</title>
+    <link rel="stylesheet" type="text/css" href="Project.css">
+</head>
+<body>
+    <header>Design By Wing C</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="image-list">
+        <div class="item" onclick="openGallery('gallery1')">
+            <img src="main1.jpg">
+            <p>Solstiss Lace Competition</p>
+        </div>
+        <div class="item" onclick="openGallery('gallery2')">
+            <img src="main2.jpg">
+            <p>Bloom After Dark</p>
+        </div>
+        <div class="item" onclick="openGallery('gallery3')">
+            <img src="main3.jpg">
+            <p>Afternoon Tea Party Gown</p>
+        </div>
+        <div class="item" onclick="openGallery('gallery4')">
+            <img src="main4.jpg">
+            <p>New Year Look</p>
+        </div>
+    </div>
+<div id="gallery1" class="gallery gallery-flex">
+        <div class="gallery-left">
+            <img src="look1a.jpg">
+            <img src="look1b.jpg">
+            <img src="look1c.jpg">
+            <img src="look1d.jpg">
+            <img src="look1e.jpg">
+            <img src="look1f.jpg">
+            <div class="back-btn" onclick="closeGallery()">Back</div>
+        </div>
+        <div class="gallery-right">
+        <h2>Solstiss Lace Competition</h2>
+        <p>
+            My design concept is inspired by the iconic wedding scene in the movie 
+            "Crazy Rich Asians". The blend of Solstiss lace and traditional Chinese 
+            wedding attire creates a modern mix of Chinese and Western styles.
+        </p>
+        <div class="download-box">
+            <a href="WC - SOLSTITSS.pptx.pdf" download class="download-btn">Process PDF</a>
+        </div>
+        </div>
+</div>
+<div id="gallery2" class="gallery gallery-flex">
+    <div class="gallery-left">
+        <img src="look2a.jpg">
+        <img src="look2b.jpg">
+        <img src="look2c.jpg">
+        <img src="look2e.jpg">
+        <div class="back-btn" onclick="closeGallery()">Back</div>
+    </div>
+    <div class="gallery-right">
+        <h2>Bloom After Dark</h2>
+        <p>Bloom After Dark is a study in elegance and contrast. The corset, crafted in rich black satin, scuplts the silhouette with precision, while intricate gold embroidery adds a touch of opulence and night-time allure. This interplay of structure and embellishment reflects the duality of darkness and light, creating a design that is both powerful and refined. Every detail-from the glossy satin to the shimmering embroidery-invites the wearer to embrace confidence, mystery, and sophistication.
+        </p>
+    </div>
+</div>
+</div>
+<div id="gallery3" class="gallery gallery-flex">
+    <div class="gallery-left">
+        <img src="look3a.jpg">
+        <img src="look3b.jpg">
+        <img src="look3c.jpg">
+        <img src="look3d.jpg">
+        <div class="back-btn" onclick="closeGallery()">Back</div>
+    </div>
+    <div class="gallery-right">
+        <h2>Afternoon Tea Party Gown</h2>
+        <p>This occasional wear look is crafted for an afternoon tea party, inspired by the delicate elegance and blooming beauty of floral gardens. The design features a structured satin corset top paired with a flowing tulle circle skirt, creating a balanced silhouette that combines form and softness. A soft pink palette is used throughout, evoking femininity, warmth, and charm. A standout element of the design is the intricate 3D floral embellishments. These are made through fabric manipulation using organza, which I hand-dyed into a range of pink shades to achieve natural tonal variation. The edges of each petal are melted to mimic the softness of real flower petals. These hand-crafted blooms are placed thoughtfully across the garment, adding depth, movement, and a touch of romantic whimsy. This look captures the spirit of a modern tea party guest—elegant, expressive, and effortlessly graceful</p>
+        <div class="download-box">
+            <a href="WC - SPECIAL OCCASION LOOK.pdf.pdf" download class="download-btn">Process PDF</a>
+    </div>
+</div>
+</div>
+<div id="gallery4" class="gallery gallery-flex">
+    <div class="gallery-left">
+        <img src="look4a.jpg">
+        <img src="look4b.jpg">
+        <img src="look4c.jpg">
+        <img src="look4d.jpg">
+        <div class="back-btn" onclick="closeGallery()">Back</div>
+    </div>
+    <div class="gallery-right">
+        <h2>New Year Look</h2>
+        <p>Designed to capture celebration, elegance, and movement. The luxurious black velvet forms the base of the dress, with a dramatic off-the-shoulder neckline and structured bow straps shoulders that convey confidence and festive sophistication. The soft chiffon at the hme adds fluidity and lightness, balancing the rich texture of the velvet and allowing the design to move gracefully. This piece embodies the excitement of a new beginning-bold,refined, and full of sparkle.</p>
+    </div>
+</div>
+</div>
+<script>
+function openGallery(id) {
+    document.querySelector('.image-list').style.display = 'none';
+    document.getElementById(id).style.display = 'flex';
+}
+function closeGallery() {
+    document.querySelectorAll('.gallery').forEach(g => g.style.display = 'none');
+    document.querySelector('.image-list').style.display = 'flex';
+}
+</script>
+<footer>
+    <div class="footer-container">
+        <p>Copyright &copy; Design By Wing C 2025</p>
+        <p><a href="mailto:winginchen@gmail.com"><em>winginchen@gmail.com</em></a></p>
+    </div>
+</main>
+</footer>
+</body>
+</html>
