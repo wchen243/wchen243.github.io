@@ -140,7 +140,7 @@ nav a:hover {
 }
 .gallery {
     display: none;
-    position: fixed;
+    position: relative;
     align-items: center;
     flex-direction: row;
     margin-top: 30px;
@@ -153,6 +153,13 @@ nav a:hover {
 }
 .gallery img:hover {
     transform: scale(1.05);
+}
+.gallery[style*="display: flex"] ~
+.gallery-flex[style*="display: flex"]~ .main-title {
+    display: none;
+}
+body.gallery-open .main-title {
+    display: none;
 }
 .back-btn {
     display: inline-block;

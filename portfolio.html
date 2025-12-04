@@ -14,7 +14,7 @@
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
-<div class="main-title">Click On Image To See Detail</div>
+    <div class="main-title">Click On Image To See Details</div>
     <div class="image-list">
         <div class="item" onclick="openGallery('gallery1')">
             <img src="main1.jpg">
@@ -102,10 +102,13 @@
 </div>
 <script>
 function openGallery(id) {
+    document.body.classList.add("gallery-open");
     document.querySelector('.image-list').style.display = 'none';
     document.getElementById(id).style.display = 'flex';
 }
+
 function closeGallery() {
+    document.body.classList.remove("gallery-open");
     document.querySelectorAll('.gallery').forEach(g => g.style.display = 'none');
     document.querySelector('.image-list').style.display = 'flex';
 }
@@ -115,7 +118,6 @@ function closeGallery() {
         <p>Copyright &copy; Design By Wing C 2025</p>
         <p><a href="mailto:winginchen@gmail.com"><em>winginchen@gmail.com</em></a></p>
     </div>
-</main>
 </footer>
 </body>
 </html>
